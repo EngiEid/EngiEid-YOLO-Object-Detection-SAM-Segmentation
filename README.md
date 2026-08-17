@@ -84,6 +84,21 @@ best.pt
 - The GUI currently uses one prompt at a time.
 
 
+## Demo
+
+The Streamlit application provides a side-by-side visualization of the complete
+pipeline: the original image, YOLO object detection, and SAM segmentation.
+
+![YOLO + SAM Demo](demo_result.png)
+
+### Example workflow
+
+1. Upload an image.
+2. Run **YOLO Detection** to detect objects.
+3. Choose **Point** and click on an object, or choose **Box** and select an object with two corners.
+4. Run **SAM Segmentation**.
+5. Compare the **Original**, **YOLO Detection**, and **SAM Segmentation** results side by side.
+
 ## Streamlit compatibility
 
 The app uses a compatibility-maintained fork of `streamlit-drawable-canvas`.
